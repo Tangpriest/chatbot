@@ -1,0 +1,150 @@
+.chatbot-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  /* background-color: #000; */
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  margin-top: 200px;
+  color: #d5d5d5;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.chatbot-intro__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.chatbot-intro__description {
+  max-width: 500px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.site-title {
+  width: 100%;
+  font-size: 2rem;
+  margin: 1rem 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  transition: all 1s ease-in-out;
+  z-index: 1000;
+  color: #d5d5d5;
+  align-items: center;
+}
+
+.site-title.small {
+  font-size: 1.5rem;
+}
+
+.robot-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+.robot-walk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: walk 2s linear infinite;
+}
+
+.robot-emoji {
+  display: block;
+  font-size: 60px;
+}
+
+@keyframes walk {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dance-floor {
+  position: relative;
+  height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.emoji {
+  font-size: 60px;
+  /* position: absolute; */
+}
+
+.robot {
+  /* left: 0; */
+  animation: dance 2s ease-in-out infinite;
+}
+
+.rabbit {
+  /* left: 100px; */
+  animation: dance 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.panda {
+  /* left: 200px; */
+  animation: dance 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes dance {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  25% {
+    transform: translateX(-10px) rotate(-15deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0);
+  }
+  75% {
+    transform: translateX(10px) rotate(15deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+.video-background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}

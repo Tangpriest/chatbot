@@ -1,0 +1,40 @@
+.chatList{
+  width: 300px;
+  height: calc(100vh - 40px);
+  padding: 0px 20px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  /* background-color: var(--primary-color-light); */
+}
+
+.ChatListItem{
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  cursor: pointer;
+  /* background-color: var(--primary-color-light); */
+  color : var(--quaternary-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.ChatListItemContent{
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ChatListItemContentTitle{
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+.ChatListItemContentText{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color : #a7a6a6;
+}

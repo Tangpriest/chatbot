@@ -1,0 +1,100 @@
+.container{
+  padding: 20px 20px 20px 100px;
+}
+
+.form{
+  color : var(--quaternary-color)
+}
+
+.form label{
+  display: block;
+  margin : 20px 0px;
+}
+
+.inputArea{
+  min-width: 500px;
+  height: 100%;
+  background-color: #40414e;
+  box-shadow: var(--input-shadow);
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--quaternary-color);
+  font-family: var(--font-mono);
+  font-size: 1.0rem;
+  border: none;
+  outline: none;
+}
+
+
+.dragBar{
+  width: 540px;
+  background-color: #40414e;
+  /* box-shadow: var(--input-shadow); */
+  padding: 20px 0px;
+  color: var(--quaternary-color);
+  font-family: var(--font-mono);
+  font-size: 1.0rem;
+  border: none;
+  outline: none;
+}
+
+.save{
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  min-width: 120px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+
+
+.save:hover {
+  background-color: #449d44;
+}
+
+.save:hover {
+  background-color: #449d44;
+}
+
+.save:active {
+  background-color: #3d8b3d;
+}
+
+.save.reset {
+  background-color: #d9534f;
+}
+
+.save.reset:hover {
+  background-color: #c9302c;
+}
+
+.save.reset:active {
+  background-color: #ac2925;
+}
+
+
+
+.formItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  
+}
+
+.input{
+  width: 460px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: var(--input-shadow);
+  padding: 0px 20px;
+  background-color: #40414e;
+  color : #FFF;
+}
