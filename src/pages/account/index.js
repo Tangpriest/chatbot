@@ -1,8 +1,8 @@
 import request from '@/utils/request'
 import { useEffect, useState } from 'react'
-import Avatar from '../components/Avatar'
-import Button from '../components/Button'
-import Navigator from '../components/Navigator'
+import Avatar from '../../components/Avatar'
+import Button from '../../components/Button'
+import Navigator from '../../components/Navigator'
 import styles from './Account.module.css'
 
 export default function Account({ setIsLoginVisible, userInfo, setUserInfo }) {

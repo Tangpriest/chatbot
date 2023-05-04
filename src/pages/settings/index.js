@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Navigator from '../components/Navigator';
+import Navigator from '../../components/Navigator';
 import styles from './Settings.module.css';
 
 function MyForm() {

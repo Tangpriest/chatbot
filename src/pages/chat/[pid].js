@@ -1,4 +1,4 @@
-import Navigator from '../components/Navigator'
+import Navigator from '../../components/Navigator'
 import ChatComponent from './components/Conversation/index'
 import ChatList from './components/List/ChatList'
 

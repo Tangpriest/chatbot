@@ -1,9 +1,9 @@
 import request from '@/utils/request';
 import { appWithTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
+import LoginDialog from '../components/Login';
+import RobotLoading from '../components/RobotLoading';
 import '../styles/globals.css';
-import LoginDialog from './components/Login';
-import RobotLoading from './components/RobotLoading';
 
 const auth = async () => {
 	const response = await request.get('/auth')

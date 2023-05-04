@@ -1,5 +1,5 @@
+import Navigator from '../components/Navigator'
 import styles from '../styles/Home.module.css'
-import Navigator from './components/Navigator'
 
 export default function Home() {
 
