@@ -1,27 +1,24 @@
 const mongoose = require('mongoose')
-const config = require('../../config/config')
-const Member = require('./member')
-const Conversation = require('./conversation')
+const config = require('../../../../backend/config/config')
 
 class mongoDB {
 	constructor() {
 		this.connect()
 		this.combinedSchemas = [
-			Member,
-			Conversation
+		
 		]
 		this.models()
 	}
 
 	connect() {
-		// mongoose.set('useCreateIndex', true)
-		// mongoose.set('useFindAndModify', false)
+		mongoose.set('useCreateIndex', true)
+		mongoose.set('useFindAndModify', false)
 
 		mongoose.connect(config.MONGODB_URI,
 			{
-				// useNewUrlParser    : true,
-				// useCreateIndex     : true,
-				// useUnifiedTopology : true
+				useNewUrlParser    : true,
+				useCreateIndex     : true,
+				useUnifiedTopology : true
 			})
 			.then(() => {
 				console.log('MongoDB connection success. ')

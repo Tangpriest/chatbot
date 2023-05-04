@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('../../../config/config');
+const config = require('../../../../backend/config/config');
 
 class JwtHelper {
   // 构造函数接受一个密钥参数
